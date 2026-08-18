@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #d35400;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #d35400;
+}
+
+.nav-links a.active {
+  color: #d35400;
+}
+
+.hero {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  animation-name: changeheroimage;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeheroimage {
+  0% {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("hero-food 1.jpg");
+  }
+
+  33% {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("hero-food 2.jpg");
+  }
+
+  66% {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("hero-food 3.jpg");
+  }
+
+  100% {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("hero-food 1.jpg");
+  }
+}
+
+.hero-content {
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-label {
+  color: #f39c12;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content > p:not(.hero-label) {
+  max-width: 600px;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #d35400;
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f39c12;
+}
+
+.site-footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 25px 0;
+  text-align: center;
+}
