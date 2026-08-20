@@ -146,3 +146,481 @@ body {
   padding: 25px 0;
   text-align: center;
 }
+
+.page-banner {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.page-banner p {
+  color: #dddddd;
+  font-size: 18px;
+}
+
+.about-section {
+  padding: 90px 0;
+}
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image,
+.about-content {
+  width: 50%;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-label {
+  color: #d35400;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+}
+
+.values-section {
+  background-color: #f7f4f0;
+  padding: 80px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+}
+
+.values-grid {
+  display: flex;
+  gap: 25px;
+}
+
+.value-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 8px;
+  border-bottom: 4px solid #d35400;
+}
+
+.value-card h3 {
+  color: #d35400;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+/* Menu section */
+.menu-section {
+  padding: 90px 0;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("about-restaurant.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section-description {
+  max-width: 600px;
+  margin: 12px auto 0;
+  color: #666666;
+}
+
+/* Food card grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Individual food card */
+.menu-card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Food card hover effect */
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+/* Food image */
+.menu-card img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* Text area inside each card */
+.menu-card-content {
+  padding: 25px;
+}
+
+/* Places meal name and price beside each other */
+.meal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.meal-heading h3 {
+  color: #2b2b2b;
+  font-size: 22px;
+}
+
+/* Meal price */
+.price {
+  color: #d35400;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu-card-content p {
+  color: #666666;
+}
+
+.menu-section .section-heading h2 {
+    color: #ffffff;
+}
+
+.menu-section .section-description {
+    color: #eeeeee;
+}
+
+/* Contact page */
+.contact-section {
+    background-color: #f7f4f0;
+    padding: 90px 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.contact-information h2,
+.contact-form-wrapper h2 {
+    color: #2b2b2b;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contact-introduction {
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.contact-item h3 {
+    color: #d35400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #555555;
+}
+
+.contact-item a {
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #d35400;
+}
+
+/* Contact form */
+.contact-form-wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: #333333;
+    font: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d35400;
+    outline: 2px solid rgba(211, 84, 0, 0.15);
+}
+
+.form-button {
+    border: none;
+    cursor: pointer;
+}
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+   Screens that are 900px wide or smaller
+======================================== */
+
+@media screen and (max-width: 900px) {
+
+    /* Navigation */
+    .navigation {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    /* Home page hero */
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    /* About page */
+    .about-layout {
+        gap: 35px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-image img {
+        height: 400px;
+    }
+
+    /* Menu page: change from three columns to two */
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact page */
+    .contact-layout {
+        gap: 40px;
+    }
+
+    .contact-information h2,
+    .contact-form-wrapper h2 {
+        font-size: 30px;
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   Screens that are 600px wide or smaller
+======================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* General container */
+    .container {
+        width: 92%;
+    }
+
+    /* Header and navigation */
+    .site-header {
+        padding: 16px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Home page hero */
+    .hero {
+        min-height: 500px;
+        text-align: center;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-label {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .hero-content > p:not(.hero-label) {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 12px 24px;
+    }
+
+    /* Page banners */
+    .page-banner {
+        padding: 55px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 34px;
+    }
+
+    .page-banner p {
+        font-size: 16px;
+    }
+
+    /* About page */
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
+
+    .about-content h2 {
+        font-size: 31px;
+    }
+
+    .values-section {
+        padding: 60px 0;
+    }
+
+    .values-grid {
+        flex-direction: column;
+    }
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+    /* Menu page */
+    .menu-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img {
+        height: 230px;
+    }
+
+    /* Contact page */
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-information h2,
+    .contact-form-wrapper h2 {
+        font-size: 29px;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 20px 0;
+        font-size: 14px;
+    }
+}
