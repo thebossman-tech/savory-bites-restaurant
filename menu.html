@@ -2,62 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Savory Bites Restaurant | Our Menu</title>
+    <meta
+      name="description"
+      content="Explore the Savory Bites menu featuring freshly prepared Nigerian rice dishes, soups, grilled meals, pastries and satisfying local favourites."
+    />
+
+    <title>Our Menu | Savory Bites Restaurant Abuja</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="restaurant.jpg" type="image/jpeg" />
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
     <header class="site-header">
       <div class="container navigation">
-        <a href="index.html" class="logo">Savory Bites</a>
+        <a href="index.html" class="logo" aria-label="Savory Bites home">
+          Savory <span>Bites</span>
+        </a>
 
-        <nav>
+        <nav aria-label="Main navigation">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-
             <li>
-              <a href="menu.html" class="active">Our Menu</a>
+              <a href="index.html">Home</a>
             </li>
 
-            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="active" aria-current="page">
+                Our Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="nav-button"> View Menu </a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <!-- Menu page introduction -->
-      <section class="page-banner">
-        <div class="container">
-          <h1>Our Menu</h1>
+      <section class="menu-hero">
+        <div class="container menu-hero-content">
+          <nav class="breadcrumb menu-breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
 
-          <p>Explore our selection of freshly prepared Nigerian meals.</p>
+              <li aria-hidden="true">/</li>
+
+              <li aria-current="page">Our Menu</li>
+            </ol>
+          </nav>
+
+          <p class="menu-hero-label">Fresh flavours await</p>
+
+          <h1>
+            Nigerian meals prepared
+            <span>just the way you love them.</span>
+          </h1>
+
+          <p class="menu-hero-description">
+            Discover satisfying rice dishes, traditional soups, grilled
+            favourites and freshly baked treats prepared with quality
+            ingredients.
+          </p>
+
+          <a href="#menu-list" class="menu-hero-link">
+            Explore our meals
+            <span aria-hidden="true">&darr;</span>
+          </a>
+
+          <div class="menu-hero-features">
+            <div class="menu-hero-feature">
+              <strong>Fresh</strong>
+              <span>Prepared daily</span>
+            </div>
+
+            <div class="menu-hero-feature">
+              <strong>Local</strong>
+              <span>Familiar flavours</span>
+            </div>
+
+            <div class="menu-hero-feature">
+              <strong>Quality</strong>
+              <span>Selected ingredients</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Main menu section -->
-      <section class="menu-section">
+      <section class="menu-section" id="menu-list">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Fresh and delicious</p>
-            <h2>Popular Meals</h2>
+          <div class="menu-section-heading">
+            <div>
+              <p class="section-label">Fresh and delicious</p>
 
-            <p class="section-description">
-              Every meal is prepared with carefully selected ingredients and
-              served fresh.
+              <h2>Customer favourites</h2>
+            </div>
+
+            <p class="menu-section-description">
+              From satisfying rice dishes to traditional soups and freshly
+              prepared favourites, there is something delicious for everyone.
             </p>
           </div>
 
           <div class="menu-grid">
-            <!-- Food card 1 -->
+            <!-- Jollof rice -->
             <article class="menu-card">
-              <img src="jollof-rice..jpg" alt="Jollof rice with chicken" />
+              <div class="menu-card-image">
+                <img
+                  src="jollof-rice..jpg"
+                  alt="Jollof rice served with grilled chicken"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge">Popular</span>
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">Rice dishes</p>
+
                 <div class="meal-heading">
                   <h3>Jollof Rice</h3>
                   <span class="price">₦4,500</span>
@@ -65,36 +147,65 @@
 
                 <p>
                   Smoky Nigerian jollof rice served with grilled chicken and
-                  fried plantain.
+                  sweet fried plantain.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
 
-            <!-- Food card 2 -->
+            <!-- Fried rice -->
             <article class="menu-card">
-              <img
-                src="Fried rice 😋😋.jpg"
-                alt="Nigerian fried rice with chicken"
-              />
+              <div class="menu-card-image">
+                <img
+                  src="Fried rice 😋😋.jpg"
+                  alt="Nigerian fried rice served with chicken"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">Rice dishes</p>
+
                 <div class="meal-heading">
                   <h3>Fried Rice</h3>
                   <span class="price">₦4,500</span>
                 </div>
 
                 <p>
-                  Colourful fried rice prepared with vegetables and served with
-                  seasoned chicken.
+                  Colourful fried rice prepared with fresh vegetables and served
+                  with seasoned chicken.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
 
-            <!-- Food card 3 -->
+            <!-- Egusi soup -->
             <article class="menu-card">
-              <img src="egusi-soup.jpg" alt="Egusi soup with assorted meat" />
+              <div class="menu-card-image">
+                <img
+                  src="egusi-soup.jpg"
+                  alt="Egusi soup prepared with assorted meat"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge meal-badge-yellow"
+                  >Local favourite</span
+                >
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">Traditional soups</p>
+
                 <div class="meal-heading">
                   <h3>Egusi Soup</h3>
                   <span class="price">₦5,000</span>
@@ -102,16 +213,30 @@
 
                 <p>
                   Rich egusi soup prepared with vegetables and assorted meat,
-                  served with your choice of swallow.
+                  served with your preferred swallow.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
 
-            <!-- Food card 4 -->
+            <!-- Grilled chicken -->
             <article class="menu-card">
-              <img src="grilled-chicken.jpg" alt="Spicy grilled chicken" />
+              <div class="menu-card-image">
+                <img
+                  src="grilled-chicken.jpg"
+                  alt="Spicy grilled chicken"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">From the grill</p>
+
                 <div class="meal-heading">
                   <h3>Grilled Chicken</h3>
                   <span class="price">₦6,000</span>
@@ -119,33 +244,63 @@
 
                 <p>
                   Tender chicken seasoned with Nigerian spices and grilled until
-                  juicy.
+                  smoky and juicy.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
 
-            <!-- Food card 5 -->
+            <!-- Spaghetti -->
             <article class="menu-card">
-              <img src="spaghetti.jpg" alt="Nigerian-style spaghetti" />
+              <div class="menu-card-image">
+                <img
+                  src="spaghetti.jpg"
+                  alt="Nigerian-style special spaghetti"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">Chef specials</p>
+
                 <div class="meal-heading">
                   <h3>Special Spaghetti</h3>
                   <span class="price">₦4,000</span>
                 </div>
 
                 <p>
-                  Delicious Nigerian-style spaghetti prepared with vegetables
-                  and rich tomato sauce.
+                  Nigerian-style spaghetti prepared with vegetables and a rich,
+                  flavourful tomato sauce.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
 
-            <!-- Food card 6 -->
+            <!-- Meat pie -->
             <article class="menu-card">
-              <img src="Meat pie.jpg" alt="Freshly baked Nigerian meat pie" />
+              <div class="menu-card-image">
+                <img
+                  src="Meat pie.jpg"
+                  alt="Freshly baked Nigerian meat pie"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge">Freshly baked</span>
+              </div>
 
               <div class="menu-card-content">
+                <p class="meal-category">Pastries</p>
+
                 <div class="meal-heading">
                   <h3>Meat Pie</h3>
                   <span class="price">₦1,500</span>
@@ -155,16 +310,322 @@
                   Freshly baked pastry filled with seasoned minced meat,
                   potatoes and carrots.
                 </p>
+
+                <a href="contact.html" class="meal-link">
+                  Order this meal
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-extras">
+        <div class="container">
+          <div class="extras-heading">
+            <p class="section-label">Complete your meal</p>
+
+            <h2>More delicious options</h2>
+
+            <p>
+              Add your preferred swallow, side dish or refreshing drink to
+              complete your Savory Bites experience.
+            </p>
+          </div>
+
+          <div class="extras-grid">
+            <!-- Swallows -->
+            <article class="extras-card">
+              <div class="extras-card-heading">
+                <span class="extras-number" aria-hidden="true">01</span>
+
+                <div>
+                  <p>Traditional favourites</p>
+                  <h3>Swallows</h3>
+                </div>
+              </div>
+
+              <ul class="extras-list">
+                <li>
+                  <div>
+                    <strong>Pounded Yam</strong>
+                    <small>Smooth and freshly prepared</small>
+                  </div>
+
+                  <span>₦1,500</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Eba</strong>
+                    <small>Prepared from quality garri</small>
+                  </div>
+
+                  <span>₦1,000</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Semovita</strong>
+                    <small>Soft and satisfying</small>
+                  </div>
+
+                  <span>₦1,000</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Amala</strong>
+                    <small>A familiar local favourite</small>
+                  </div>
+
+                  <span>₦1,000</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Side dishes -->
+            <article class="extras-card extras-card-featured">
+              <div class="extras-card-heading">
+                <span class="extras-number" aria-hidden="true">02</span>
+
+                <div>
+                  <p>Add something extra</p>
+                  <h3>Side Dishes</h3>
+                </div>
+              </div>
+
+              <ul class="extras-list">
+                <li>
+                  <div>
+                    <strong>Fried Plantain</strong>
+                    <small>Sweet and golden</small>
+                  </div>
+
+                  <span>₦1,500</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Coleslaw</strong>
+                    <small>Fresh and creamy</small>
+                  </div>
+
+                  <span>₦1,200</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Moi Moi</strong>
+                    <small>Steamed bean pudding</small>
+                  </div>
+
+                  <span>₦1,500</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Extra Chicken</strong>
+                    <small>Seasoned and grilled</small>
+                  </div>
+
+                  <span>₦3,000</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Drinks -->
+            <article class="extras-card">
+              <div class="extras-card-heading">
+                <span class="extras-number" aria-hidden="true">03</span>
+
+                <div>
+                  <p>Cool and refreshing</p>
+                  <h3>Drinks</h3>
+                </div>
+              </div>
+
+              <ul class="extras-list">
+                <li>
+                  <div>
+                    <strong>Zobo</strong>
+                    <small>Refreshing hibiscus drink</small>
+                  </div>
+
+                  <span>₦1,500</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Chapman</strong>
+                    <small>Classic Nigerian cocktail</small>
+                  </div>
+
+                  <span>₦2,500</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Fresh Juice</strong>
+                    <small>Ask about today's flavour</small>
+                  </div>
+
+                  <span>₦2,000</span>
+                </li>
+
+                <li>
+                  <div>
+                    <strong>Bottled Water</strong>
+                    <small>Served chilled</small>
+                  </div>
+
+                  <span>₦500</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="menu-price-note">
+            Prices shown are for this portfolio project and may be updated
+            without notice.
+          </p>
+        </div>
+      </section>
+
+      <section class="menu-cta">
+        <div class="container menu-cta-layout">
+          <div class="menu-cta-content">
+            <p class="menu-cta-label">Ready to enjoy your meal?</p>
+
+            <h2>Fresh Nigerian food is only a call away.</h2>
+
+            <p>
+              Contact Savory Bites to ask about today's availability, place an
+              order or plan your next visit to our restaurant.
+            </p>
+
+            <div class="menu-cta-actions">
+              <a href="tel:+2348012345678" class="button button-yellow">
+                Call to Order
+              </a>
+
+              <a href="contact.html" class="button button-outline-light">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-cta-card">
+            <p class="menu-cta-card-label">Visit Savory Bites</p>
+
+            <div class="menu-cta-detail">
+              <span aria-hidden="true">01</span>
+
+              <div>
+                <small>Our location</small>
+                <strong>24 Food Avenue, Wuse 2</strong>
+                <p>Abuja, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="menu-cta-detail">
+              <span aria-hidden="true">02</span>
+
+              <div>
+                <small>Call us</small>
+                <strong>
+                  <a href="tel:+2348012345678">+234 801 234 5678</a>
+                </strong>
+                <p>Speak with our restaurant team</p>
+              </div>
+            </div>
+
+            <div class="menu-cta-detail">
+              <span aria-hidden="true">03</span>
+
+              <div>
+                <small>Opening hours</small>
+                <strong>Monday–Saturday</strong>
+                <p>9:00 AM–10:00 PM</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            Savory <span>Bites</span>
+          </a>
+
+          <p>
+            Freshly prepared Nigerian meals, warm hospitality and satisfying
+            flavours for every occasion.
+          </p>
+
+          <a href="menu.html" class="footer-menu-link">
+            Explore our menu
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <nav class="footer-column" aria-label="Footer navigation">
+          <h2>Quick Links</h2>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-column">
+          <h2>Contact Us</h2>
+
+          <address class="footer-contact">
+            <p>
+              24 Food Avenue,<br />
+              Wuse 2, Abuja, Nigeria
+            </p>
+
+            <p>
+              <a href="tel:+2348012345678"> +234 801 234 5678 </a>
+            </p>
+
+            <p>
+              <a href="mailto:hello@savorybites.com"> hello@savorybites.com </a>
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h2>Opening Hours</h2>
+
+          <div class="footer-hours">
+            <p>
+              <span>Monday–Saturday</span>
+              <strong>9:00 AM–10:00 PM</strong>
+            </p>
+
+            <p>
+              <span>Sunday</span>
+              <strong>12:00 PM–9:00 PM</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+
+          <p>Designed and developed by OGUNDIJO OLATUNBOSUN.</p>
+        </div>
       </div>
     </footer>
   </body>

@@ -2,167 +2,534 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Savory Bites Restaurant | Contact Us</title>
+    <meta
+      name="description"
+      content="Contact Savory Bites Restaurant in Wuse 2, Abuja. Ask about our menu, opening hours, orders or your next dining experience."
+    />
+
+    <title>Contact Us | Savory Bites Restaurant Abuja</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="restaurant.jpg" type="image/jpeg" />
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
     <header class="site-header">
       <div class="container navigation">
-        <a href="index.html" class="logo">Savory Bites</a>
+        <a href="index.html" class="logo" aria-label="Savory Bites home">
+          Savory <span>Bites</span>
+        </a>
 
-        <nav>
+        <nav aria-label="Main navigation">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Our Menu</a></li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
 
             <li>
-              <a href="contact.html" class="active">Contact Us</a>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="menu.html">Our Menu</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="active" aria-current="page">
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="nav-button"> View Menu </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <!-- Contact page banner -->
-      <section class="page-banner">
-        <div class="container">
-          <h1>Contact Us</h1>
+    <main id="main-content">
+      <!-- Contact page hero -->
+      <section class="contact-hero">
+        <div class="container contact-hero-content">
+          <nav class="breadcrumb contact-breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
 
-          <p>We would love to hear from you.</p>
+              <li aria-hidden="true">/</li>
+
+              <li aria-current="page">Contact Us</li>
+            </ol>
+          </nav>
+
+          <p class="contact-hero-label">Let’s connect</p>
+
+          <h1>
+            We would love to
+            <span>hear from you.</span>
+          </h1>
+
+          <p class="contact-hero-description">
+            Ask about our menu, place an order or plan your next visit. Our
+            Savory Bites team is always happy to help.
+          </p>
+
+          <div class="contact-hero-actions">
+            <a href="#contact-details" class="button button-yellow">
+              Contact Our Team
+            </a>
+
+            <a href="tel:+2348012345678" class="contact-phone-link">
+              <span class="contact-phone-icon" aria-hidden="true">&#9742;</span>
+
+              <span>
+                <small>Call us directly</small>
+                <strong>+234 801 234 5678</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Contact information and form -->
+      <section class="contact-section" id="contact-details">
+        <div class="container">
+          <div class="contact-section-heading">
+            <div>
+              <p class="section-label">Get in touch</p>
+              <h2>Visit, call or send us a message</h2>
+            </div>
+
+            <p>
+              Whether you have a question about our meals, want to place an
+              order or are planning a visit, our team is ready to assist you.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <!-- Contact details -->
+            <div class="contact-information">
+              <article class="contact-item">
+                <span class="contact-item-number" aria-hidden="true">01</span>
+
+                <div>
+                  <p class="contact-item-label">Come and visit</p>
+                  <h3>Our Address</h3>
+
+                  <address>
+                    24 Food Avenue, Wuse 2,<br />
+                    Abuja, Nigeria
+                  </address>
+                </div>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-number" aria-hidden="true">02</span>
+
+                <div>
+                  <p class="contact-item-label">Speak with us</p>
+                  <h3>Telephone</h3>
+
+                  <p>
+                    <a href="tel:+2348012345678"> +234 801 234 5678 </a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-number" aria-hidden="true">03</span>
+
+                <div>
+                  <p class="contact-item-label">Write to us</p>
+                  <h3>Email Address</h3>
+
+                  <p>
+                    <a href="mailto:hello@savorybites.com">
+                      hello@savorybites.com
+                    </a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-number" aria-hidden="true">04</span>
+
+                <div>
+                  <p class="contact-item-label">When we are open</p>
+                  <h3>Opening Hours</h3>
+
+                  <div class="contact-hours">
+                    <p>
+                      <span>Monday–Saturday</span>
+                      <strong>9:00 AM–10:00 PM</strong>
+                    </p>
+
+                    <p>
+                      <span>Sunday</span>
+                      <strong>12:00 PM–9:00 PM</strong>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Contact form -->
+            <div class="contact-form-wrapper">
+              <div class="contact-form-heading">
+                <p class="contact-form-label">Send a message</p>
+                <h2>How can we help?</h2>
+
+                <p>
+                  Complete the form and your email application will open so you
+                  can send your message to Savory Bites.
+                </p>
+              </div>
+
+              <form
+                class="contact-form"
+                action="mailto:hello@savorybites.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="full-name">Full name</label>
+
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      placeholder="Your full name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Telephone number</label>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+234"
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email address</label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+
+                  <select id="subject" name="subject" required>
+                    <option value="" selected disabled>Choose a subject</option>
+                    <option value="Menu enquiry">Menu enquiry</option>
+                    <option value="Food order">Food order</option>
+                    <option value="Reservation enquiry">
+                      Reservation enquiry
+                    </option>
+                    <option value="General enquiry">General enquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Your message</label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us how we can help"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="button form-button">
+                  Send Message
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+
+                <p class="form-notice">
+                  Submitting this form opens your default email application.
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Contact information and form -->
-      <section class="contact-section">
-        <div class="container contact-layout">
-          <div class="contact-information">
-            <p class="section-label">Get in touch</p>
+      <section class="contact-faq">
+        <div class="container faq-layout">
+          <div class="faq-introduction">
+            <p class="section-label">Helpful information</p>
 
-            <h2>Visit or contact Savory Bites</h2>
+            <h2>Questions our guests often ask</h2>
 
-            <p class="contact-introduction">
-              Have a question about our menu, opening hours or reservations?
-              Contact our team using the details below.
+            <p>
+              Find quick answers about orders, reservations, opening hours and
+              visiting Savory Bites.
             </p>
 
-            <div class="contact-item">
-              <h3>Address</h3>
-              <p>
-                24 Food Avenue, Wuse 2,<br />
-                Abuja, Nigeria
-              </p>
-            </div>
+            <div class="faq-help-card">
+              <p>Still have a question?</p>
+              <h3>Speak directly with our team</h3>
 
-            <div class="contact-item">
-              <h3>Telephone</h3>
-
-              <p>
-                <a href="tel:+2348012345678"> +234 801 234 5678 </a>
-              </p>
-            </div>
-
-            <div class="contact-item">
-              <h3>Email</h3>
-
-              <p>
-                <a href="mailto:hello@savorybites.com">
-                  hello@savorybites.com
-                </a>
-              </p>
-            </div>
-
-            <div class="contact-item">
-              <h3>Opening Hours</h3>
-
-              <p>
-                Monday–Saturday: 9:00 AM–10:00 PM<br />
-                Sunday: 12:00 PM–9:00 PM
-              </p>
+              <a href="tel:+2348012345678">
+                +234 801 234 5678
+                <span aria-hidden="true">&rarr;</span>
+              </a>
             </div>
           </div>
 
-          <!-- Form is visual because JavaScript/backend is not allowed -->
-          <div class="contact-form-wrapper">
-            <h2>Send us a message</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                Do I need to make a reservation?
+                <span aria-hidden="true">+</span>
+              </summary>
 
-            <form class="contact-form" action="#" method="post">
-              <div class="form-group">
-                <label for="full-name">Full name</label>
+              <div class="faq-answer">
+                <p>
+                  Walk-in guests are welcome. However, we recommend contacting
+                  us in advance when visiting with a large group or celebrating
+                  a special occasion.
+                </p>
+              </div>
+            </details>
 
-                <input
-                  type="text"
-                  id="full-name"
-                  name="full-name"
-                  placeholder="Enter your full name"
-                  required
-                />
+            <details class="faq-item">
+              <summary>
+                Can I place an order before arriving?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  Yes. Call our restaurant team to confirm meal availability and
+                  place your order before visiting.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                Do you offer food delivery?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  Delivery availability may depend on your location. Contact our
+                  team to confirm whether delivery is available in your area.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                What time does the restaurant close?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  We close at 10:00 PM from Monday to Saturday and at 9:00 PM on
+                  Sundays.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                Can you accommodate group dining?
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  Yes. Contact us before your visit so our team can help prepare
+                  a comfortable dining experience for your group.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section">
+        <div class="container location-layout">
+          <div class="location-image">
+            <img
+              src="restaurant-interior.jpg"
+              alt="Welcoming interior of Savory Bites Restaurant"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="location-image-label">
+              <span aria-hidden="true">&#9679;</span>
+              <p>Visit us in Wuse 2</p>
+            </div>
+          </div>
+
+          <div class="location-content">
+            <p class="section-label">Find Savory Bites</p>
+
+            <h2>Your next satisfying meal is waiting.</h2>
+
+            <p class="location-introduction">
+              Visit us in Wuse 2, Abuja, and enjoy freshly prepared Nigerian
+              meals in a warm and comfortable environment.
+            </p>
+
+            <div class="location-details">
+              <div class="location-detail">
+                <span class="location-number" aria-hidden="true">01</span>
+
+                <div>
+                  <small>Restaurant address</small>
+                  <strong>24 Food Avenue, Wuse 2</strong>
+                  <p>Abuja, Nigeria</p>
+                </div>
               </div>
 
-              <div class="form-group">
-                <label for="email">Email address</label>
+              <div class="location-detail">
+                <span class="location-number" aria-hidden="true">02</span>
 
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email address"
-                  required
-                />
+                <div>
+                  <small>Monday–Saturday</small>
+                  <strong>9:00 AM–10:00 PM</strong>
+                  <p>Open for lunch and dinner</p>
+                </div>
               </div>
 
-              <div class="form-group">
-                <label for="phone">Telephone number</label>
+              <div class="location-detail">
+                <span class="location-number" aria-hidden="true">03</span>
 
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Enter your telephone number"
-                />
+                <div>
+                  <small>Sunday</small>
+                  <strong>12:00 PM–9:00 PM</strong>
+                  <p>Enjoy a relaxed Sunday meal</p>
+                </div>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="subject">Subject</label>
+            <div class="location-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Wuse+2+Abuja"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Directions
+              </a>
 
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="What is your message about?"
-                  required
-                />
-              </div>
+              <a href="tel:+2348012345678" class="text-link">
+                Call before visiting
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
 
-              <div class="form-group">
-                <label for="message">Message</label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  placeholder="Write your message"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="button form-button">
-                Send Message
-              </button>
-            </form>
+            <p class="portfolio-location-note">
+              Savory Bites and its address are fictional and were created for
+              this portfolio project.
+            </p>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            Savory <span>Bites</span>
+          </a>
+
+          <p>
+            Freshly prepared Nigerian meals, warm hospitality and satisfying
+            flavours for every occasion.
+          </p>
+
+          <a href="menu.html" class="footer-menu-link">
+            Explore our menu
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <nav class="footer-column" aria-label="Footer navigation">
+          <h2>Quick Links</h2>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-column">
+          <h2>Contact Us</h2>
+
+          <address class="footer-contact">
+            <p>
+              24 Food Avenue,<br />
+              Wuse 2, Abuja, Nigeria
+            </p>
+
+            <p>
+              <a href="tel:+2348012345678"> +234 801 234 5678 </a>
+            </p>
+
+            <p>
+              <a href="mailto:hello@savorybites.com"> hello@savorybites.com </a>
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h2>Opening Hours</h2>
+
+          <div class="footer-hours">
+            <p>
+              <span>Monday–Saturday</span>
+              <strong>9:00 AM–10:00 PM</strong>
+            </p>
+
+            <p>
+              <span>Sunday</span>
+              <strong>12:00 PM–9:00 PM</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+
+          <p>Designed and developed by OGUNDIJO OLATUNBOSUN.</p>
+        </div>
       </div>
     </footer>
   </body>

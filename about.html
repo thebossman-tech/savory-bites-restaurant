@@ -1,121 +1,445 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
 
-    <title>Savory Bites Restaurant | About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta
+      name="description"
+      content="Learn about Savory Bites Restaurant, our passion for freshly prepared Nigerian meals, warm hospitality and memorable dining experiences."
+    />
 
-<body>
+    <title>About Savory Bites | Nigerian Restaurant in Abuja</title>
 
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="restaurant.jpg" type="image/jpeg" />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
+    <!-- Website header -->
     <header class="site-header">
-        <div class="container navigation">
-            <a href="index.html" class="logo">Savory Bites</a>
+      <div class="container navigation">
+        <a href="index.html" class="logo" aria-label="Savory Bites home">
+          Savory <span>Bites</span>
+        </a>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="menu.html">Our Menu</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="active" aria-current="page">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">Our Menu</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="nav-button"> View Menu </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="main-content">
+      
+      <!-- About page hero -->
+      <section class="about-hero">
+        <div class="container about-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
 
-        <section class="page-banner">
-            <div class="container">
-                <h1>About Savory Bites</h1>
-                <p>Discover the passion behind every meal we serve.</p>
+              <li aria-hidden="true">/</li>
+
+              <li aria-current="page">About Us</li>
+            </ol>
+          </nav>
+
+          <p class="about-hero-label">Get to know us</p>
+
+          <h1>
+            The heart and flavour behind
+            <span>Savory Bites.</span>
+          </h1>
+
+          <p class="about-hero-description">
+            We bring people together through freshly prepared Nigerian meals,
+            familiar flavours and warm hospitality.
+          </p>
+
+          <a href="#our-story" class="about-hero-link">
+            Discover our story
+            <span aria-hidden="true">&darr;</span>
+          </a>
+        </div>
+      </section>
+
+      
+      <!-- Our story section -->
+      <section class="story-section" id="our-story">
+        <div class="container story-layout">
+          <!-- Story photographs -->
+          <div class="story-visual">
+            <div class="story-main-image">
+              <img
+                src="about-restaurant.jpg"
+                alt="Comfortable interior of Savory Bites Restaurant"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-        </section>
 
-        <section class="about-section">
-            <div class="container about-layout">
-
-                <div class="about-image">
-                    <img
-                        src="hero-food 2.jpg" height="200px"
-                        alt="Inside Savory Bites Restaurant"
-                    >
-                </div>
-
-                <div class="about-content">
-                    <p class="section-label">Our story</p>
-
-                    <h2>Serving delicious meals with love</h2>
-
-                    <p>
-                        Savory Bites was established to provide delicious,
-                        freshly prepared Nigerian meals in a warm and welcoming
-                        environment.
-                    
-
-                    
-                        We carefully select quality ingredients and combine
-                        traditional recipes with excellent service to give our
-                        customers an enjoyable dining experience.
-                    
-
-                    
-                        Whether you are visiting for lunch, dinner or a special
-                        celebration, our team is always ready to make your
-                        experience memorable.
-                    </p>
-                </div>
-
+            <div class="story-food-image">
+              <img
+                src="hero-food1.jpg"
+                alt="Freshly prepared Nigerian meal at Savory Bites"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-        </section>
 
-        <section class="values-section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-label">What guides us</p>
-                    <h2>Our Core Values</h2>
-                </div>
-
-                <div class="values-grid">
-
-                    <article class="value-card">
-                        <h3>Quality</h3>
-                        <p>
-                            We use carefully selected ingredients to prepare
-                            fresh and satisfying meals.
-                        </p>
-                    </article>
-
-                    <article class="value-card">
-                        <h3>Hospitality</h3>
-                        <p>
-                            We welcome every customer with warmth, respect and
-                            attentive service.
-                        </p>
-                    </article>
-
-                    <article class="value-card">
-                        <h3>Cleanliness</h3>
-                        <p>
-                            We maintain a clean and comfortable environment for
-                            our customers and team.
-                        </p>
-                    </article>
-
-                </div>
+            <div class="story-badge">
+              <strong>Fresh</strong>
+              <span>Prepared every day</span>
             </div>
-        </section>
+
+            <div class="story-decoration" aria-hidden="true"></div>
+          </div>
+
+          <!-- Story content -->
+          <div class="story-content">
+            <p class="section-label">Our story</p>
+
+            <h2>Created from a love for good food and shared moments</h2>
+
+            <p class="story-introduction">
+              Savory Bites was created with a simple purpose: to serve freshly
+              prepared Nigerian meals in a place where every guest feels
+              welcome.
+            </p>
+
+            <p>
+              We believe that a satisfying meal is more than food on a plate. It
+              is the familiar aroma of a favourite dish, the comfort of sharing
+              a table and the care that goes into every ingredient.
+            </p>
+
+            <p>
+              From everyday lunches to dinners and special celebrations, our
+              team combines familiar Nigerian flavours with attentive service to
+              create enjoyable dining experiences.
+            </p>
+
+            <blockquote class="story-quote">
+              <p>
+                “Every meal should feel familiar, satisfying and prepared with
+                genuine care.”
+              </p>
+
+              <cite>Savory Bites philosophy</cite>
+            </blockquote>
+
+            <div class="story-promises">
+              <div class="story-promise">
+                <span aria-hidden="true">01</span>
+
+                <div>
+                  <strong>Prepared fresh</strong>
+                  <small>Quality ingredients, carefully selected.</small>
+                </div>
+              </div>
+
+              <div class="story-promise">
+                <span aria-hidden="true">02</span>
+
+                <div>
+                  <strong>Familiar flavours</strong>
+                  <small>Nigerian dishes made to feel like home.</small>
+                </div>
+              </div>
+
+              <div class="story-promise">
+                <span aria-hidden="true">03</span>
+
+                <div>
+                  <strong>Warm service</strong>
+                  <small>Every guest is treated with genuine care.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-actions">
+              <a href="menu.html" class="button"> Explore Our Menu </a>
+
+              <a href="contact.html" class="text-link">
+                Plan your visit
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-section">
+        <div class="container">
+          <div class="mission-heading">
+            <p class="section-label">What drives us</p>
+            <h2>Our Mission and Vision</h2>
+            <p>
+              Our purpose guides how we prepare our meals, welcome our guests
+              and grow the Savory Bites experience.
+            </p>
+          </div>
+
+          <div class="mission-grid">
+            <article class="mission-card mission-card-red">
+              <span class="mission-number" aria-hidden="true">01</span>
+
+              <div class="mission-icon" aria-hidden="true">♥</div>
+
+              <p class="mission-card-label">Our Mission</p>
+
+              <h3>Making every meal feel special</h3>
+
+              <p>
+                To serve freshly prepared Nigerian meals with consistent
+                quality, warm hospitality and flavours that make every guest
+                feel at home.
+              </p>
+            </article>
+
+            <article class="mission-card mission-card-light">
+              <span class="mission-number" aria-hidden="true">02</span>
+
+              <div class="mission-icon" aria-hidden="true">✦</div>
+
+              <p class="mission-card-label">Our Vision</p>
+
+              <h3>Becoming a trusted dining destination</h3>
+
+              <p>
+                To become a restaurant people confidently choose for delicious
+                food, memorable moments and dependable service.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core values -->
+      <section class="values-section">
+        <div class="container">
+          <div class="values-heading">
+            <div>
+              <p class="section-label">What guides us</p>
+              <h2>Values behind every Savory Bites experience</h2>
+            </div>
+
+            <p class="values-heading-text">
+              From our kitchen to your table, these principles guide how we
+              prepare our meals and serve every guest.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <article class="value-card">
+              <span class="value-number" aria-hidden="true">01</span>
+
+              <div class="value-icon" aria-hidden="true">&#10003;</div>
+
+              <h3>Quality</h3>
+
+              <p>
+                We carefully select our ingredients and prepare every meal with
+                attention to freshness, flavour and presentation.
+              </p>
+
+              <span class="value-line" aria-hidden="true"></span>
+            </article>
+
+            <article class="value-card value-card-featured">
+              <span class="value-number" aria-hidden="true">02</span>
+
+              <div class="value-icon" aria-hidden="true">&#9829;</div>
+
+              <h3>Hospitality</h3>
+
+              <p>
+                We welcome every customer with warmth, respect and attentive
+                service that makes each visit enjoyable.
+              </p>
+
+              <span class="value-line" aria-hidden="true"></span>
+            </article>
+
+            <article class="value-card">
+              <span class="value-number" aria-hidden="true">03</span>
+
+              <div class="value-icon" aria-hidden="true">&#10024;</div>
+
+              <h3>Cleanliness</h3>
+
+              <p>
+                We maintain a clean, safe and comfortable environment for our
+                guests and every member of our team.
+              </p>
+
+              <span class="value-line" aria-hidden="true"></span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-cta">
+  <div class="container about-cta-container">
+    <div class="about-cta-content">
+      <p class="about-cta-label">Come and dine with us</p>
+
+      <h2>Good food tastes better when it is shared.</h2>
+
+      <p>
+        Visit Savory Bites and enjoy freshly prepared Nigerian meals,
+        welcoming service and a comfortable dining experience.
+      </p>
+
+      <div class="about-cta-actions">
+        <a href="menu.html" class="button button-yellow">
+          Explore Our Menu
+        </a>
+
+        <a href="contact.html" class="button button-outline-light">
+          Plan Your Visit
+        </a>
+      </div>
+    </div>
+
+    <div class="about-cta-details">
+      <div class="about-detail">
+        <span class="about-detail-number">01</span>
+
+        <div>
+          <small>Opening hours</small>
+          <strong>Monday – Saturday</strong>
+          <p>9:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <div class="about-detail">
+        <span class="about-detail-number">02</span>
+
+        <div>
+          <small>Sunday hours</small>
+          <strong>Sunday</strong>
+          <p>12:00 PM – 9:00 PM</p>
+        </div>
+      </div>
+
+      <div class="about-detail">
+        <span class="about-detail-number">03</span>
+
+        <div>
+          <small>Our location</small>
+          <strong>24 Food Avenue</strong>
+          <p>Wuse 2, Abuja</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     </main>
 
+    <!-- Website footer -->
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
-        </div>
-    </footer>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            Savory <span>Bites</span>
+          </a>
 
-</body>
+          <p>
+            Freshly prepared Nigerian meals, warm hospitality and satisfying
+            flavours for every occasion.
+          </p>
+
+          <a href="menu.html" class="footer-menu-link">
+            Explore our menu
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <nav class="footer-column" aria-label="Footer navigation">
+          <h2>Quick Links</h2>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-column">
+          <h2>Contact Us</h2>
+
+          <address class="footer-contact">
+            <p>
+              24 Food Avenue,<br />
+              Wuse 2, Abuja, Nigeria
+            </p>
+
+            <p>
+              <a href="tel:+2348012345678"> +234 801 234 5678 </a>
+            </p>
+
+            <p>
+              <a href="mailto:hello@savorybites.com"> hello@savorybites.com </a>
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-column">
+          <h2>Opening Hours</h2>
+
+          <div class="footer-hours">
+            <p>
+              <span>Monday–Saturday</span>
+              <strong>9:00 AM–10:00 PM</strong>
+            </p>
+
+            <p>
+              <span>Sunday</span>
+              <strong>12:00 PM–9:00 PM</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+
+          <p>Designed and developed by OGUNDIJO OLATUNBOSUN.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

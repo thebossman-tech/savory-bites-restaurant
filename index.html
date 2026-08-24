@@ -3,49 +3,516 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover freshly prepared Nigerian meals at Savory Bites Restaurant. Explore our menu and contact us for pickup, delivery or dining."
+    />
 
-    <title>Savory Bites Restaurant</title>
+    <title>Savory Bites | Fresh Nigerian Meals in Abuja</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="restaurant.jpg" type="image">
+    <link rel="icon" href="restaurant.jpg" type="image" />
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
     <header class="site-header">
       <div class="container navigation">
-        <a href="index.html" class="logo">Savory Bites</a>
+        <a href="index.html" class="logo" aria-label="Savory Bites home">
+          Savory <span>Bites</span>
+        </a>
 
-        <nav>
+        <nav aria-label="Main navigation">
           <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li>
+              <a href="index.html" class="active" aria-current="page"> Home </a>
+            </li>
+
             <li><a href="about.html">About Us</a></li>
+
             <li><a href="menu.html">Our Menu</a></li>
+
             <li><a href="contact.html">Contact Us</a></li>
+
+            <li>
+              <a href="menu.html" class="nav-button">View Menu</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
+        <!-- Decorative food pictures -->
+        <div class="hero-food hero-food-left" aria-hidden="true"></div>
+
+        <div class="hero-food hero-food-right" aria-hidden="true"></div>
+
         <div class="container hero-content">
           <p class="hero-label">Freshly prepared every day</p>
 
-          <h1>Delicious Nigerian meals made with love</h1>
+          <h1>
+            Fresh Nigerian meals,
+            <span>made to brighten your day.</span>
+          </h1>
 
-          <p>
-            Enjoy freshly prepared local dishes, satisfying meals and warm
-            hospitality in a comfortable environment.
+          <p class="hero-description">
+            Enjoy delicious Nigerian meals prepared with quality ingredients for
+            dining, pickup or delivery.
           </p>
 
-          <a href="menu.html" class="button">Explore Our Menu</a>
+          <div class="hero-actions">
+            <a href="menu.html" class="button"> Explore Our Menu </a>
+
+            <a href="about.html" class="secondary-button">
+              Discover Our Story
+            </a>
+          </div>
+
+          <div class="service-options">
+            <a href="menu.html" class="service-card">
+              <span class="service-number">01</span>
+
+              <span class="service-text">
+                <strong>Pickup</strong>
+                <small
+                  >Collect your freshly prepared meal at our restaurant.</small
+                >
+              </span>
+
+              <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a href="contact.html" class="service-card">
+              <span class="service-number">02</span>
+
+              <span class="service-text">
+                <strong>Delivery</strong>
+                <small>Enjoy your favourite meals wherever you are.</small>
+              </span>
+
+              <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular meals section -->
+      <section class="popular-meals">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Customer favourites</p>
+
+            <h2>Meals everyone loves</h2>
+
+            <p class="section-description">
+              Explore some of our most popular dishes, prepared fresh and served
+              with the familiar flavours you love.
+            </p>
+          </div>
+
+          <div class="featured-meals-grid">
+            <!-- Meal 1 -->
+            <article class="featured-meal-card">
+              <div class="featured-meal-image">
+                <img
+                  src="jollof-rice..jpg"
+                  alt="Smoky Nigerian jollof rice served with grilled chicken"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge">Popular</span>
+              </div>
+
+              <div class="featured-meal-content">
+                <div class="featured-meal-heading">
+                  <h3>Smoky Jollof Rice</h3>
+                  <span>₦4,500</span>
+                </div>
+
+                <p>
+                  Nigerian jollof rice served with seasoned grilled chicken and
+                  sweet fried plantain.
+                </p>
+
+                <a href="menu.html" class="meal-link">
+                  View meal <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Meal 2 -->
+            <article class="featured-meal-card">
+              <div class="featured-meal-image">
+                <img
+                  src="Fried rice 😋😋.jpg"
+                  alt="Nigerian fried rice served with seasoned chicken"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge">Fresh</span>
+              </div>
+
+              <div class="featured-meal-content">
+                <div class="featured-meal-heading">
+                  <h3>Special Fried Rice</h3>
+                  <span>₦4,500</span>
+                </div>
+
+                <p>
+                  Colourful fried rice prepared with fresh vegetables and served
+                  with delicious seasoned chicken.
+                </p>
+
+                <a href="menu.html" class="meal-link">
+                  View meal <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Meal 3 -->
+            <article class="featured-meal-card">
+              <div class="featured-meal-image">
+                <img
+                  src="egusi-soup.jpg"
+                  alt="Rich Nigerian egusi soup served with assorted meat"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <span class="meal-badge">Local favourite</span>
+              </div>
+
+              <div class="featured-meal-content">
+                <div class="featured-meal-heading">
+                  <h3>Egusi Soup</h3>
+                  <span>₦5,000</span>
+                </div>
+
+                <p>
+                  Rich egusi soup prepared with vegetables and assorted meat,
+                  served with your preferred swallow.
+                </p>
+
+                <a href="menu.html" class="meal-link">
+                  View meal <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="popular-meals-action">
+            <a href="menu.html" class="button"> Explore Full Menu </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works section -->
+      <section class="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Simple and convenient</p>
+
+            <h2>How it works</h2>
+
+            <p class="section-description">
+              Getting your favourite Savory Bites meal is easy. Follow these
+              three simple steps.
+            </p>
+          </div>
+
+          <ol class="steps-grid">
+            <!-- Step 1 -->
+            <li class="step-card">
+              <span class="step-number">01</span>
+
+              <div class="step-icon" aria-hidden="true">
+                <span>🍽️</span>
+              </div>
+
+              <h3>Choose your meal</h3>
+
+              <p>
+                Browse our menu and select from our range of freshly prepared
+                Nigerian dishes.
+              </p>
+
+              <a href="menu.html" class="step-link">
+                Browse the menu
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+
+            <!-- Step 2 -->
+            <li class="step-card">
+              <span class="step-number">02</span>
+
+              <div class="step-icon" aria-hidden="true">
+                <span>☎️</span>
+              </div>
+
+              <h3>Contact our team</h3>
+
+              <p>
+                Contact us with your meal selection and tell us whether you
+                prefer pickup or delivery.
+              </p>
+
+              <a href="contact.html" class="step-link">
+                Contact us
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+
+            <!-- Step 3 -->
+            <li class="step-card">
+              <span class="step-number">03</span>
+
+              <div class="step-icon" aria-hidden="true">
+                <span>🛍️</span>
+              </div>
+
+              <h3>Enjoy your meal</h3>
+
+              <p>
+                Collect your freshly prepared order or have it delivered to your
+                preferred location.
+              </p>
+
+              <a href="contact.html" class="step-link">
+                View our location
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Why choose Savory Bites -->
+      <section class="why-choose-us">
+        <div class="container why-choose-layout">
+          <!-- Restaurant photograph -->
+          <div class="why-choose-image">
+            <img
+              src="about-restaurant.jpg"
+              alt="Comfortable dining area inside Savory Bites Restaurant"
+            />
+
+            <div class="experience-card">
+              <strong>Fresh</strong>
+              <span>Meals prepared daily</span>
+            </div>
+          </div>
+
+          <!-- Section content -->
+          <div class="why-choose-content">
+            <p class="section-label">Why Savory Bites?</p>
+
+            <h2>Great food and warm hospitality in one place</h2>
+
+            <p class="why-choose-introduction">
+              From the ingredients we select to the way we welcome every
+              customer, we are committed to making each dining experience
+              enjoyable and memorable.
+            </p>
+
+            <div class="reasons-grid">
+              <!-- Reason 1 -->
+              <article class="reason-item">
+                <span class="reason-number">01</span>
+
+                <div>
+                  <h3>Fresh ingredients</h3>
+
+                  <p>
+                    We carefully select quality ingredients for every meal we
+                    prepare.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Reason 2 -->
+              <article class="reason-item">
+                <span class="reason-number">02</span>
+
+                <div>
+                  <h3>Authentic flavours</h3>
+
+                  <p>
+                    Our dishes celebrate familiar Nigerian flavours and
+                    carefully prepared recipes.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Reason 3 -->
+              <article class="reason-item">
+                <span class="reason-number">03</span>
+
+                <div>
+                  <h3>Warm hospitality</h3>
+
+                  <p>
+                    Our team welcomes every guest with attentive and friendly
+                    service.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Reason 4 -->
+              <article class="reason-item">
+                <span class="reason-number">04</span>
+
+                <div>
+                  <h3>Clean environment</h3>
+
+                  <p>
+                    We provide a comfortable and well-maintained space where
+                    customers can relax.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="why-choose-actions">
+              <a href="about.html" class="button"> Learn More About Us </a>
+
+              <a href="contact.html" class="text-link">
+                Visit our restaurant
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final call-to-action section -->
+      <section class="home-cta">
+        <div class="container home-cta-layout">
+          <div class="home-cta-content">
+            <p class="cta-label">Ready for something delicious?</p>
+
+            <h2>Your next satisfying meal is waiting.</h2>
+
+            <p>
+              Explore our selection of freshly prepared Nigerian dishes or
+              contact our team to plan your visit, pickup or delivery.
+            </p>
+
+            <div class="home-cta-actions">
+              <a href="menu.html" class="cta-primary-button">
+                Explore Our Menu
+              </a>
+
+              <a href="contact.html" class="cta-secondary-button">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
+          <aside class="opening-hours" aria-label="Restaurant opening hours">
+            <p class="opening-hours-label">Opening hours</p>
+
+            <h3>Come and dine with us</h3>
+
+            <div class="opening-time">
+              <span>Monday–Saturday</span>
+              <strong>9:00 AM–10:00 PM</strong>
+            </div>
+
+            <div class="opening-time">
+              <span>Sunday</span>
+              <strong>12:00 PM–9:00 PM</strong>
+            </div>
+
+            <a href="contact.html" class="location-link">
+              View our location
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </aside>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+      <div class="container footer-grid">
+        <!-- Restaurant information -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            Savory <span>Bites</span>
+          </a>
+
+          <p>
+            Freshly prepared Nigerian meals, warm hospitality and satisfying
+            flavours for every occasion.
+          </p>
+
+          <a href="menu.html" class="footer-menu-link">
+            Explore our menu
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Quick links -->
+        <nav class="footer-column" aria-label="Footer navigation">
+          <h2>Quick Links</h2>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact details -->
+        <div class="footer-column">
+          <h2>Contact Us</h2>
+
+          <address class="footer-contact">
+            <p>
+              24 Food Avenue,<br />
+              Wuse 2, Abuja, Nigeria
+            </p>
+
+            <p>
+              <a href="tel:+2348012345678"> +234 801 234 5678 </a>
+            </p>
+
+            <p>
+              <a href="mailto:hello@savorybites.com"> hello@savorybites.com </a>
+            </p>
+          </address>
+        </div>
+
+        <!-- Opening hours -->
+        <div class="footer-column">
+          <h2>Opening Hours</h2>
+
+          <div class="footer-hours">
+            <p>
+              <span>Monday–Saturday</span>
+              <strong>9:00 AM–10:00 PM</strong>
+            </p>
+
+            <p>
+              <span>Sunday</span>
+              <strong>12:00 PM–9:00 PM</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom footer -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>&copy; 2026 Savory Bites Restaurant. All rights reserved.</p>
+
+          <p>Designed and developed by OGUNDIJO OLATUNBOSUN.</p>
+        </div>
       </div>
     </footer>
   </body>
